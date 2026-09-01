@@ -8,15 +8,13 @@ import jakarta.persistence.Id;
 public class Produto {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private long id;
+        private Long id;
 
         private String nome;
         private Double preco;
 
-
         public Produto() {
         }
-
 
         public Produto(String nome, Double preco) {
             this.nome = nome;
@@ -39,10 +37,9 @@ public class Produto {
         }
 
 
-        public void setId(long id) {
+        public void setId(Long id) {
             this.id = id;
         }
-
 
         public void setNome(String nome) {
             this.nome = nome;
